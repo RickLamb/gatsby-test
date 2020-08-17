@@ -48,7 +48,7 @@ const PortfolioItem = ({
           </div>
         </a>
         <div className="portfolio-caption">
-          <h4>{header}</h4>
+          <h3>{header}</h3>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
         </div>
       </Col>

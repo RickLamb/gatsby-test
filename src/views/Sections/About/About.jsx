@@ -34,7 +34,7 @@ const About = ({ className, frontmatter }) => {
                 content={content}
                 imageContent={
                   imageContent ? (
-                    <div dangerouslySetInnerHTML={{ __html: `<h4>${nl2br(imageContent)}</h4>` }} />
+                    <div dangerouslySetInnerHTML={{ __html: `<h3>${nl2br(imageContent)}</h3>` }} />
                   ) : null
                 }
               />

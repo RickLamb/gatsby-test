@@ -20,7 +20,7 @@ const ServiceItem = ({ iconName, imageFileName, header, content }) => {
     <>
       {iconPart}
       {imagePart}
-      <h4 className="service-item-heading">{header}</h4>
+      <h3 className="service-item-heading">{header}</h3>
       <p className="text-muted">{content}</p>
     </>
   );

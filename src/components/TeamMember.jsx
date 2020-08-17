@@ -26,7 +26,7 @@ const TeamMember = ({
         fileName={imageFileName}
         alt={imageAlt || header || subheader}
       />
-      <h4>{header}</h4>
+      <h3>{header}</h3>
       <p className="text-muted">{subheader}</p>
       <div>
         {twitterPart}
