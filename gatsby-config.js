@@ -1,5 +1,5 @@
 const path = require("path");
-const { title, keywords, description, author, defaultLang, trackingId } = require("./config/site");
+const { title, keywords, description, author, siteUrl, defaultLang, trackingId } = require("./config/site");
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +7,7 @@ module.exports = {
     keywords,
     description,
     author,
+    siteUrl,
   },
   plugins: [
     {
@@ -43,7 +44,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-eslint",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl,
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-offline",

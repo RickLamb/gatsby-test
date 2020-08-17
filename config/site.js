@@ -12,6 +12,7 @@ module.exports = {
   ],
   description: "gatsby version of startbootstrap-agency with i18n support.",
   author: "thundermiracle",
+  siteUrl: `https://gatsby.kodalia.com`,
   trackingId: "UA-119418003-5",
   defaultLang: "en",
   langTextMap: {
