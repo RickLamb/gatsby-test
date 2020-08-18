@@ -7,6 +7,7 @@ import Top from "views/Top";
 import Footer from "views/Footer";
 import * as Sections from "views/Sections";
 import SEO from "components/SEO";
+import Form from "components/Form";
 import LanguageSelector from "components/LanguageSelector";
 
 import "utils/fixFontAwesome";
@@ -129,6 +130,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
         extraItems={langSelectorPart}
       />
       <Top frontmatter={topNode.frontmatter} />
+      <Form />
       {
         // dynamically import sections
         sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
