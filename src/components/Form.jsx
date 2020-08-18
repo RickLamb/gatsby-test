@@ -6,17 +6,20 @@ import "./Form.scss";
 const Form = () => {
   return (
     <div className='backend'>
-      <form name="register" netlify >
-        <p>
-          <label htmlFor="name">Your Name: <input type="text" id="name" name="name" /></label>
+      <form name="register" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true" >
+        <input type="hidden" name="form-name" value="register" />
+        <p className="hidden">
+          <input name="bot-field" id="bot-field" />
         </p>
         <p>
-          <label htmlFor="email">Your Email: <input type="email" id="email" name="email" /></label>
+          <input type="text" name="email" id="email" />
         </p>
+        <div data-netlify-recaptcha="true" />
         <p>
-          <input type='submit' value='Send' />
+          <button type="submit">Send</button>
         </p>
       </form>
+
     </div>
   )
 }
